@@ -21,6 +21,8 @@
 		808D53CD180C2CC000B323F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808D53AF180C2CC000B323F4 /* UIKit.framework */; };
 		808D53D5180C2CC000B323F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808D53D3180C2CC000B323F4 /* InfoPlist.strings */; };
 		808D53D7180C2CC000B323F4 /* quizAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 808D53D6180C2CC000B323F4 /* quizAppTests.m */; };
+		80D5075D197F3DD200CFD49D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D5075C197F3DD200CFD49D /* CoreData.framework */; };
+		80D50760197F402900CFD49D /* QuizApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80D5075E197F402900CFD49D /* QuizApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,6 @@
 		808D53BA180C2CC000B323F4 /* QuizAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizAppAppDelegate.h; sourceTree = "<group>"; };
 		808D53BB180C2CC000B323F4 /* QuizAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizAppAppDelegate.m; sourceTree = "<group>"; };
 		808D53BE180C2CC000B323F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		808D53C0180C2CC000B323F4 /* QuizAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizAppViewController.h; sourceTree = "<group>"; };
 		808D53C1180C2CC000B323F4 /* QuizAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizAppViewController.m; sourceTree = "<group>"; };
 		808D53C3180C2CC000B323F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		808D53C9180C2CC000B323F4 /* quizAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quizAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +54,9 @@
 		808D53D2180C2CC000B323F4 /* quizAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "quizAppTests-Info.plist"; sourceTree = "<group>"; };
 		808D53D4180C2CC000B323F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		808D53D6180C2CC000B323F4 /* quizAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quizAppTests.m; sourceTree = "<group>"; };
+		808D53E0180C34C900B323F4 /* QuizAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizAppViewController.h; sourceTree = "<group>"; };
+		80D5075C197F3DD200CFD49D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		80D5075F197F402900CFD49D /* QuizApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D5075D197F3DD200CFD49D /* CoreData.framework in Frameworks */,
 				808D53AE180C2CC000B323F4 /* CoreGraphics.framework in Frameworks */,
 				808D53B0180C2CC000B323F4 /* UIKit.framework in Frameworks */,
 				808D53AC180C2CC000B323F4 /* Foundation.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		808D53AA180C2CC000B323F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80D5075C197F3DD200CFD49D /* CoreData.framework */,
 				808D53AB180C2CC000B323F4 /* Foundation.framework */,
 				808D53AD180C2CC000B323F4 /* CoreGraphics.framework */,
 				808D53AF180C2CC000B323F4 /* UIKit.framework */,
@@ -112,10 +118,10 @@
 		808D53B1180C2CC000B323F4 /* quizApp */ = {
 			isa = PBXGroup;
 			children = (
+				808D53E0180C34C900B323F4 /* QuizAppViewController.h */,
 				808D53BA180C2CC000B323F4 /* QuizAppAppDelegate.h */,
 				808D53BB180C2CC000B323F4 /* QuizAppAppDelegate.m */,
 				808D53BD180C2CC000B323F4 /* Main.storyboard */,
-				808D53C0180C2CC000B323F4 /* QuizAppViewController.h */,
 				808D53C1180C2CC000B323F4 /* QuizAppViewController.m */,
 				808D53C3180C2CC000B323F4 /* Images.xcassets */,
 				808D53B2180C2CC000B323F4 /* Supporting Files */,
@@ -130,6 +136,7 @@
 				808D53B4180C2CC000B323F4 /* InfoPlist.strings */,
 				808D53B7180C2CC000B323F4 /* main.m */,
 				808D53B9180C2CC000B323F4 /* quizApp-Prefix.pch */,
+				80D5075E197F402900CFD49D /* QuizApp.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -197,7 +204,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = QuizApp;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Erin McGee";
 				TargetAttributes = {
 					808D53C8180C2CC000B323F4 = {
@@ -252,6 +259,7 @@
 			files = (
 				808D53B8180C2CC000B323F4 /* main.m in Sources */,
 				808D53C2180C2CC000B323F4 /* QuizAppViewController.m in Sources */,
+				80D50760197F402900CFD49D /* QuizApp.xcdatamodeld in Sources */,
 				808D53BC180C2CC000B323F4 /* QuizAppAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +314,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -345,7 +352,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -403,7 +409,6 @@
 		808D53DE180C2CC000B323F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quizApp.app/quizApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -426,7 +431,6 @@
 		808D53DF180C2CC000B323F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quizApp.app/quizApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -461,6 +465,7 @@
 				808D53DC180C2CC000B323F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		808D53DD180C2CC000B323F4 /* Build configuration list for PBXNativeTarget "quizAppTests" */ = {
 			isa = XCConfigurationList;
@@ -469,8 +474,22 @@
 				808D53DF180C2CC000B323F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80D5075E197F402900CFD49D /* QuizApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80D5075F197F402900CFD49D /* QuizApp.xcdatamodel */,
+			);
+			currentVersion = 80D5075F197F402900CFD49D /* QuizApp.xcdatamodel */;
+			path = QuizApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 808D53A0180C2CC000B323F4 /* Project object */;
 }
